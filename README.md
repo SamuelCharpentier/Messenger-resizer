@@ -46,9 +46,10 @@ npm run build
 
 ## Installation
 
-1. Install the [Tampermonkey](https://www.tampermonkey.net/) browser extension.
-2. Download the latest built script from the [Releases page](https://github.com/SamuelCharpentier/Messenger-resizer/releases).
+1. Install the [Tampermonkey](https://www.tampermonkey.net/) and [Stylus](https://add0n.com/stylus.html) browser extensions.
+2. Download the latest built scripts and style sheets from the [Releases page](https://github.com/SamuelCharpentier/Messenger-resizer/releases).
 3. In Tampermonkey, create a new userscript matching `https://www.facebook.com/messages/*` and paste the downloaded JS into it.
+4. In Stylus, create a new userstyle for URLs starting with `https://www.facebook.com/messages/` and paste the downloaded CSS into it.
 
 ## Deployment
 
