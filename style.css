@@ -1,0 +1,12 @@
+body {
+	margin: 0;
+	background: #202020;
+}
+:root {
+	--messenger-card-spacing: 16px;
+}
+div[aria-label='Liste des publications'] {
+	background: grey;
+	height: 100vh;
+	width: 350px;
+}
