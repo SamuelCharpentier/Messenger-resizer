@@ -44,16 +44,22 @@ npm run check
 npm run build
 ```
 
+## Installation
+
+1. Install the [Tampermonkey](https://www.tampermonkey.net/) browser extension.
+2. Download the latest built script from the [Releases page](https://github.com/SamuelCharpentier/Messenger-resizer/releases).
+3. In Tampermonkey, create a new userscript matching `https://www.facebook.com/messages/*` and paste the downloaded JS into it.
+
 ## Deployment
 
-The build output is self-contained — it includes the MutationObserver logic that waits for the target element to appear in Facebook's SPA, so the JS can be pasted directly into Tampermonkey with no extra wrapper.
+If you are developing locally and want to build from source:
 
 1. **Build** the project:
-   ```bash
-   npm run build
-   ```
+    ```bash
+    npm run build
+    ```
 2. **Tampermonkey** — create a new userscript matching `https://www.facebook.com/messages/*` and paste the built JS from `dist/` directly into it.
-3. **Stylus** *(optional)* — create a userstyle for `facebook.com/messages` if you need additional global CSS overrides beyond what the component provides.
+3. **Stylus** _(optional)_ — create a userstyle for `facebook.com/messages` if you need additional global CSS overrides beyond what the component provides.
 
 > **Note:** `index.html` and `style.css` at the root are only used for local development and are not part of the deployed output.
 
