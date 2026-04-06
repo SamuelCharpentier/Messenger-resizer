@@ -8,12 +8,10 @@
 	let dragToResize: DragToResize | null = null;
 
 	onMount(() => {
-		console.log(parentElement);
 		if (!resizer) return;
 		dragToResize = new DragToResize(resizer, {
 			elementToResize: parentElement as HTMLElement,
-			storageKey:
-				'div[role="navigation"][aria-label="Liste des publications"]',
+			storageKey: 'div[role="navigation"][aria-label="Liste des publications"]',
 		});
 	});
 	onDestroy(() => {
@@ -36,10 +34,7 @@
 	}
 	#my-custom-resizer {
 		--spacing: 1.5px;
-		--resizer-width: var(
-			--messenger-card-spacing,
-			16px
-		);
+		--resizer-width: var(--messenger-card-spacing, 16px);
 		position: absolute;
 		top: 5%;
 		right: calc(-1 * var(--resizer-width));
