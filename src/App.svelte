@@ -39,7 +39,7 @@
 		top: 5%;
 		right: calc(-1 * var(--resizer-width));
 		width: var(--resizer-width);
-		height: 90%;
+		height: calc(90vh - 56px);
 		background: transparent;
 		border-radius: var(--resizer-width);
 		cursor: ew-resize;
